@@ -1,7 +1,5 @@
 # Partie d'installation et démarrage
 
-***
-
 ## Installation et configuration
 Installez [nodeJS](https://nodejs.org/en/) en version LTS ou https://nodejs.org/en/
 
