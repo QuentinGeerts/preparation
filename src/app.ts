@@ -1,8 +1,7 @@
 import { mesTypes } from "./docs/types";
-import { printId, isDate, isUser, TUser } from "./docs/narrowing";
 
 /**
- * Partie - Types
+ * Partie 1 - Types
  */
 
 console.warn("Types");
@@ -23,9 +22,11 @@ console.log('mesTypes.m :>> ', mesTypes.m);
 console.log('mesTypes.n :>> ', mesTypes.n);
 
 /**
- * Partie - Narrowing
+ * Partie 2 - Narrowing
  * ou comment réduire la liste des types disponibles
  */
+
+import { printId, isDate, isUser, TUser } from "./docs/narrowing";
 
 console.warn("Narrowing");
 
@@ -33,13 +34,37 @@ printId(12);
 printId('a');
 printId(null);
 
-let birthDate = new Date('03/04/1996')
+let birthDate = new Date('03/04/1996');
 
-console.log('Date [03/04/1996]', isDate(birthDate))
-console.log('String [03/04/1996]', isDate('03/04/1996'))
+console.log('Date [03/04/1996]', isDate(birthDate));
+console.log('String [03/04/1996]', isDate('03/04/1996'));
 
-let user = new TUser('Quentin')
-console.log('isUser(user)', isUser(user))
+let user = new TUser('Quentin');
+console.log('isUser(user)', isUser(user));
 
-let y = isUser('Toto')
+let y = isUser('Toto');
 console.log('y :>> ', y);
+
+/**
+ * Partie 3 - Types custom
+ * On peut créer ses propres types
+ */
+
+import { Admin, Id, DateString } from "./docs/customTypes";
+
+let admin: Admin = {
+    lastName: 'Geerts',
+    firstName: 'Quentin',
+    roleId: 42
+};
+
+console.log('admin :>> ', admin);
+
+let idTmpInt: Id = 42;
+let idTmpString: Id = "42";
+// let idTmpBoolean: Id = true; // Ne fonctionne pas
+console.log('idTmpType :>> ', idTmpInt);
+console.log('idTmpType :>> ', idTmpString);
+
+let dateTmp: DateString = "03/04/1996";
+console.log('dateTmp :>> ', dateTmp);
