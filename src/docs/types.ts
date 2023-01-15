@@ -1,3 +1,7 @@
+/**
+ * Partie - Types
+ */
+
 const a: string = "Bonjour à tous";
 const b: number = 42;
 const c: boolean = true;
