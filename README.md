@@ -26,7 +26,7 @@ Ensuite, créer deux fichiers à la racine du projet :
 {
     "compilerOptions": {
         "outDir": "dist",
-        "target": "ES2015", //es3, es5, es6/es2015, es2016, es2017, es2018, es2019, es2020, es2021, or esnext
+        "target": "ES2015",
         "noEmitOnError": true,
         "strict": true
     },
@@ -44,6 +44,7 @@ Ensuite, créer deux fichiers à la racine du projet :
 
 `target` : 
 * permet de définir la version de js visée lors de la compilation
+* es3, es5, es6/es2015, es2016, es2017, es2018, es2019, es2020, es2021, or esnext
 
 `noEmitOnError` : 
 * permet de dire si true que le code ne doit pas compiler en cas d'erreur
