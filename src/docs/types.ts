@@ -23,3 +23,5 @@ export let mesTypes = { a, b, c, d, e, f, g, h, i, j, k, l, m, n };
 
 // Export grâce à module.exports, un objet lambda, qui contiendra toutes les variables
 // Ce qui par la suite, dans notre app.ts, nous évitera des erreurs de nommage de variables déjà existantes
+
+// ✏️ Exercice 01
