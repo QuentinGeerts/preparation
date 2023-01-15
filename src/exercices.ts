@@ -1,8 +1,10 @@
 /**
- * Partie 1 - Exercice 01
+ * Partie 1 - ✏️ Exercice 01
  */
 
-// Créer un code permettant de créer un compteur classique, avec + 1, -1 et =..., il faudra type le tout au maximum, préparer 2 fonctions pour ça
+/**
+ * Créer un code permettant de créer un compteur classique, avec + 1, -1 et =..., il faudra type le tout au maximum, préparer 2 fonctions pour ça
+ */ 
 
 // const btnPlus: HTMLButtonElement | null = document.querySelector("#compteurP");
 // const btnMoins: HTMLButtonElement | null = document.querySelector("#compteurM");
@@ -36,10 +38,12 @@
 //     btnMoins.addEventListener("click", decrement);
 
 /**
- * Partie 4 - Exercice 02
+ * Partie 4 - ✏️ Exercice 02
  */
 
-// reprendre le code de l'exos 1 et tranformer le tout avec des narrowing et des generics
+/**
+ * Reprendre le code de l'exos 1 et tranformer le tout avec des narrowing et des generics
+ */
 
 // const btnPlus = document.querySelector<HTMLButtonElement>("#compteurP");
 // const btnMoins = document.querySelector<HTMLButtonElement>("#compteurM");
@@ -70,3 +74,17 @@
 
 // btnPlus?.addEventListener("click", increment);
 // btnMoins?.addEventListener<keyof HTMLElementEventMap>("click", decrement);
+
+/**
+ * Partie 5 - ✏️ Exercice 03
+ */
+ 
+/**
+ * Préparer un micro jeu de type heroes vs monster, vous aurez 2 grandes classes, heroes et monster, 
+ * le but, étant de pouvoir instancier un nouveau hero et un monstre avec des caractèristiques différentes,
+ * ils devront être stocker dans un objet tableau grace a une fonction, 
+ * il devront pouvoir s'affronter graçe a des points de vie, d'attaque et de défense,
+ * si vous avez terminer dans les temps impartis, vous pouvez améliorer, utilisez votre imagination
+ * requis: un generic, un narrowing, des classes, un static, une abstract, le tout entièrement typé !
+ * n'hésitez par à utiliser l'html pour ça et le rendre encore plus chouette
+ */

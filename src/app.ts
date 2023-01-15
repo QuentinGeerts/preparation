@@ -22,6 +22,12 @@ console.log('mesTypes.m :>> ', mesTypes.m);
 console.log('mesTypes.n :>> ', mesTypes.n);
 
 /**
+ * Partie 1.2 - Assertion de type
+ */
+
+
+
+/**
  * Partie 2 - Narrowing
  * ou comment réduire la liste des types disponibles
  */
@@ -135,3 +141,41 @@ getProperty(x, 'a');
  * Partie 5 - Classes
  */
 
+console.warn("Classes");
+
+import { Uuser } from "./docs/classes";
+
+let uuser = new Uuser()
+console.log('uuser :>> ', uuser);
+
+// Duck Typing
+
+import { Point, Geometry, getX, getY, Carre } from "./docs/classes";
+
+console.log('getX(new Point) :>> ', getX(new Point));
+console.log('getX(new Geometry) :>> ', getX(new Geometry));
+
+console.log('getY(new Point) :>> ', getY(new Point));
+console.log('getY(new Geometry) :>> ', getY(new Geometry));
+
+console.log('new Carre :>> ', new Carre);
+
+// Mot-clef : static
+
+import { AGeometryS, DateConverter } from "./docs/classes";
+
+const ags = AGeometryS.origin // On peut accéder à une propriété sans avoir à instancier la class (comme elle est abstrait, je ne peux déjà pas l'instancier 😉)
+console.log('ags :>> ', ags);
+
+console.log(DateConverter.convertTimeStampToDate(new Date().getTime().toString()));
+
+// Interfaces
+
+import { Allemande } from "./docs/classes";
+
+let mercedes: Allemande = new Allemande()
+let audi: Allemande = new Allemande()
+audi.name = 'Vive les audis !'
+
+console.log('mercedes :>> ', mercedes);
+console.log('audi :>> ', audi);
