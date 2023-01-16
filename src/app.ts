@@ -21,8 +21,14 @@ console.log('mesTypes.l :>> ', mesTypes.l);
 console.log('mesTypes.m :>> ', mesTypes.m);
 console.log('mesTypes.n :>> ', mesTypes.n);
 
+
 /**
- * Partie 1.2 - Assertion de type
+ * Partie 2 - Indexation
+ */
+
+
+/**
+ * Partie 3 - Assertion de type
  */
 
 

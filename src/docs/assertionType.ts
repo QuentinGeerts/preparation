@@ -20,4 +20,5 @@ let compteur3 = <HTMLButtonElement>document.querySelector('#compteur'); // Type 
 const increment = (e: string | number) => {
     // compteur3.querySelector('span').innerText = e.toString()
     // compteur3.querySelector('span')!.innerText = e.toString()
+    // (<HTMLButtonElement>compteur3.querySelector('span')).innerText = e.toString()
 }
